@@ -1,0 +1,151 @@
+.kulim-park{
+  font-family: "Kulim Park", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navbar{
+  margin-top: 48px;
+  margin-inline: 72px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-right{
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 860px) {
+  .navbar{
+    margin-inline: 16px;
+  }
+  .thin-line{
+    width: 30px;
+
+  }
+  .kulim-park{
+    font-size: 13px;
+  }
+  .navbar-right{
+    flex-direction: column;
+    gap: 16px;
+  }
+  .centerline{
+    flex-direction: row-reverse;
+  }
+}
+
+
+.centerline{
+  display: flex;
+  gap: 11px;
+}
+.divider{
+  height: 70px;
+  border-bottom: 1px #888 solid;
+}
+
+.headline{
+  display: flex;
+  justify-content: center;
+  font-family: "Kings", cursive;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  font-weight: 400;
+  font-size: 17vw;
+  margin-top: 170px;
+  padding-top: 0px;
+  line-height: 85%;
+}
+.titlebreak{
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .titlebreak{
+    display: inline-block;
+  }
+  .headline{
+    font-size: 30vw;
+    line-height: 160%;
+    margin-top: 20px;
+  }
+}
+
+
+.choice-list{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.choices{
+  display: flex;
+  gap: 15px;
+  padding-block: 6px;
+  /* border-bottom: 1px solid white; */
+}
+
+
+.body-copy{
+  margin-top: 0px;
+  margin-inline: 150px;
+}
+
+@media screen and (max-width: 860px) {
+  .body-copy{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 120%;
+  }
+
+  .choice-list{
+    margin-top: 48px;
+  }
+
+  .choices{
+    justify-content: center;
+  }
+
+
+}
+
+.buy-now-btn{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 150px;
+  margin-bottom: 100px;
+  padding-block: 20px;
+  padding-inline: 64px;
+  cursor: pointer;
+  transition: padding-inline background-color 0.3s ease-in-out;
+}
+
+.buy-now-btn:hover{
+  background-color: #3e8e4168;
+  padding-inline: 90px
+}
+
+.canvas {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+}
+
+@media screen and (max-width: 850px) {
+
+  .canvas {
+    height: 60vh;
+  }
+
+  }

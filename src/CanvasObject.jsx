@@ -44,7 +44,7 @@ const CanvasObject = () => {
                 {windowSize.width > 850 ? `COCOLANA` : `COCO\nLANA`}
             </Text>
 
-            <SpringyOrbitControls />
+            {/* <SpringyOrbitControls /> */}
         </Canvas>
   </div>
   )

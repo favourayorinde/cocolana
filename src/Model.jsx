@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
 import { MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
-import { useControls } from 'leva'
 import { useFrame } from '@react-three/fiber'
 
 const Model = () => {
 
-    const { nodes } = useGLTF("/perfume.glb")
+    const perfumeUrl = `${import.meta.env.BASE_URL}perfume.glb`
+
+    const { nodes } = useGLTF(perfumeUrl)
+    
     const bottle = useRef(null)
     const perfume = useRef()
 

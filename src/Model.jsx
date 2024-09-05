@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber'
 
 const Model = () => {
 
-    const { nodes } = useGLTF("/public/perfume.glb")
+    const { nodes } = useGLTF("/perfume.glb")
     const bottle = useRef(null)
     const perfume = useRef()
 

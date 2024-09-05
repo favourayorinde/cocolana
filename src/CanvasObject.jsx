@@ -37,8 +37,8 @@ const CanvasObject = () => {
         <Canvas
         >
             <Text
-            font='public/Kings-Regular.ttf'
-            fontSize={windowSize.width > 850 ?fontSizeWide : fontSizeNarrow}
+            font= "./Kings-Regular.ttf"
+            fontSize={windowSize.width > 850 ? fontSizeWide : fontSizeNarrow}
             position={[0,0,-1]}
             //klkl
             >
